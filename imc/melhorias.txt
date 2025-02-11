@@ -1,0 +1,1 @@
+No projeto de imc colocar resultados ruins em vermelho e bons em verde e mostrar só duas casas decimais após a vírgula da variável de resultados

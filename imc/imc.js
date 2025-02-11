@@ -13,16 +13,20 @@ function calcular(event) {
 
     if (imc < 17) {
         resultado = document.getElementById("resultado")
-        resultado.innerHTML = "<br/> Seu resultado foi: " + imc + "</br> Muito abaixo do peso"
+        resultado.style.color = "#090C9B"
+        resultado.innerHTML = "<br/> Seu resultado foi: " + imc.toFixed(2) + "</br> Muito abaixo do peso"
     } else if (imc >= 17 && imc < 18.5) {
         resultado = document.getElementById("resultado")
-        resultado.innerHTML = "<br/> Seu resultado foi: " + imc + "</br> Abaixo do peso"
+        resultado.style.color = "#090C9B"
+        resultado.innerHTML = "<br/> Seu resultado foi: " + imc.toFixed(2)+ "</br> Abaixo do peso"
     } else if (imc >= 18.5 && imc < 30) {
         resultado = document.getElementById("resultado")
-        resultado.innerHTML = "<br/> Seu resultado foi: " + imc + "</br> Peso normal"
+        resultado.style.color = "#3D52D5"
+        resultado.innerHTML = "<br/> Seu resultado foi: " + imc.toFixed(2)+ "</br> Peso normal"
     } else {
         resultado = document.getElementById("resultado")
-        resultado.innerHTML = "<br/> Seu resultado foi: " + imc + "</br> Acima do peso"
+        resultado.style.color = "#090C9B"
+        resultado.innerHTML = "<br/> Seu resultado foi: " + imc.tofixed(2) + "</br> Acima do peso"
     }
 }
 

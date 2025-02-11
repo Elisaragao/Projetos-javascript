@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #B4C5E4;
+}
+
+form {
+    background-color: #BBCAE6;
+    padding: 60px;
+    border-radius: 100px;
+}
+
+.centro {
+    text-align: center;
+}
+
+input {
+    border-radius: 60px;
+    border-style: hidden;
+    width: 300px;
+    height: 30px;
+}
+
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: "Kumar One";
+}

@@ -1,5 +1,3 @@
-
-
 function mudar() {
     let nome = prompt("Digite um nome")
 
