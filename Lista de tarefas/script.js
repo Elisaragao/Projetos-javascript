@@ -2,7 +2,8 @@ let listElement = document.querySelector("#app ul")
 let inputElement = document.querySelector("#app input")
 let buttonElement = document.querySelector("#app button")
 
-let tarefas = []
+let tarefas = JSON.parse(localStorage.getItem("@listaTarefas")) || [] //Ou ele busca as tarefas já existententes ou retorn uma array vazia
+
 
 function renderTarefas() {
 
@@ -28,6 +29,8 @@ function renderTarefas() {
 
 }
 
+    renderTarefas()
+
 function adicionarTarefa() {
     if (inputElement.value === '') {
         alert("Digite alguma tarefa")
@@ -39,11 +42,20 @@ function adicionarTarefa() {
         inputElement.value = ''
 
         renderTarefas()
+        salvarTarefas()
     }
 }
 
 function excluirTarefa(posicao){
-alert("A posição do item é: " + posicao)
+//alert("A posição do item é: " + posicao)
 tarefas.splice(posicao, 1)
+renderTarefas()
+salvarTarefas()
 }
 buttonElement.onclick = adicionarTarefa
+
+function salvarTarefas(){
+    localStorage.setItem("@listaTarefas", JSON.stringify(tarefas)) //JSON.stringfy para salvar uma lista, não pode ser acesso direto
+
+
+}

@@ -1,0 +1,73 @@
+/* Resetando margens e padding para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Cor de fundo clara e suave */
+    color: #333; /* Texto em cor neutra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#app {
+    background-color: #fff; /* Fundo branco para o container */
+    padding: 30px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 300px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #6a5acd; /* Cor de destaque quando o input é focado */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #6a5acd; /* Cor suave de roxo */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4b3f8c; /* Cor mais escura para o hover */
+}
+
+ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #f0f0f0; /* Cor de destaque quando o item da lista é hover */
+}
