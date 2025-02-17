@@ -1,0 +1,40 @@
+/* Centraliza o conteúdo na tela */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #f5deb3; /* Tom bege */
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #f0e2b6; /* Tom mais claro ao passar o mouse */
+    transform: translateY(-3px);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Estilo do h1 */
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin: 20px;
+}

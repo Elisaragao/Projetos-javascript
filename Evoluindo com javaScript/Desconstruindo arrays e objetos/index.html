@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="addNome()">Adicionar nome</button>
+    <button oncliick="addSobrenome()">Adicionar sobrenome</button>
+    <button onclick="addIdade()">Adicionar idade</button>
+
+    <script>
+
+            let pessoa = {
+            nomePessoa: '',
+            sobrenomePessoa: '',
+            idadePessoa: ''
+        }
+    
+
+        function addNome() {
+            let nome = prompt("Digite seu nome")
+            pessoa.nomePessoa = nome
+            console.log(pessoa.nomePessoa)
+        }
+
+        function addSobrenome() {
+            let sobrenome = prompt("Digite seu sobrenome")
+            pessoa.sobrenomePessoa = sobrenome
+            console.log(pessoa.sobrenomePessoa)
+
+        }
+
+        function addIdade() {
+            let idade = prompt("Digite sua idade")
+            pessoa.idadePessoa = idade
+            console.log(pessoa.idadePessoa)
+        }
+
+
+/*let pessoa = {
+    nome: "Elisangela",
+    sobrenome: "Aragão",
+    idade: 18
+} 
+
+const {nome, sobrenome, idade} = pessoa
+console.log("Seu nome é " + nome)
+console.log(`Seu sobrenome é ${sobrenome}`)
+console.log(`Sua idade é: ${idade} anos`)
+*/
+
+/*let livros = ["Uma mulher no escuro", "As vantagens de ser invisível"]
+
+    //let {0: terror, 1: drama} = livros
+    
+    let [terror, drama] = livros
+
+    console.log(terror)
+    console.log(drama)*/
+
+    let nomes = ["Elisangela"]
+
+    let sobrenome = [...nomes, "Santos", "Aragão"]
+
+    console.log(sobrenome)
+
+
+
+
+
+    </script>
+</body>
+
+</html>

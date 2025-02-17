@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">
+        Bem vindo(a)
+    </h1>
+    
+    <button onclick="entrar()">Acessar</button>
+    
+    <script>
+        
+        let h1 = document.getElementById("h1")
+
+        function entrar(){
+            let nome = prompt("Qual o seu nome?")
+            if (nome === '' || nome === null){
+                alert("Ops, algo deu errado :( ")
+                h1.innerText = "Clique no botão para acessar"
+            }else{
+                h1.innerHTML = "Bem vindo(a) " + nome + " "
+
+                //--------CRIANDO BOTÃO DE SAÍDA--------//
+
+                let botao = document.createElement("button")
+                botao.innerText = "Sair"
+                botao.onclick = sair
+
+                h1.appendChild(botao)
+        }
+    }
+
+    function sair(){
+        alert("Até a próxima!")
+        h1.innerText = "Você saiu!"
+
+    }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
