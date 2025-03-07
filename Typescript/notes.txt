@@ -1,0 +1,8 @@
+Testar se o ts tá pegando
+Avançar no curso + praticar
+
+'Type inference' == tipagem dinâmica
+
+tipos: string, number(inteiro ou real[float], hexadecimal ou binário), union type(armazenar valores de tipos diferentes[exemplo: string e inteiro e em uma array]), any(sem tipo definido, ou seja, aceita qualquer coisa[é adicionado por padrão, exemplo: se você não definior um tipo ele automaticamente assume o 'any']), boolean(Tudo que for diferente de zero, vazio e undefined será verdadeiro), tupla (não tem no javascript, somente no typescript), unknown(descinhecido > só pode ser atribuído à variáveis também do tipo unknown e any[que aceita qualquer coisa])
+
+//default ou opcional, ou seja, padrão ou opcional
